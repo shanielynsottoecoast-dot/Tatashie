@@ -1,0 +1,3220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>MACDKEN | Good Food. Good Vibes. Good Mood.</title>
+
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #fff8ed;
+            color: #292929;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #b90f2f;
+            color: white;
+            padding: 22px 7%;
+            border-bottom: 5px solid #f5c542;
+        }
+
+        .header-inner {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 25px;
+        }
+
+        .logo-area h1 {
+            margin: 0;
+            font-size: 34px;
+            letter-spacing: 3px;
+        }
+
+        .logo-area p {
+            margin: 2px 0 0;
+            font-size: 13px;
+            letter-spacing: 1px;
+        }
+
+        .tagline-extra {
+            font-size: 12px;
+            margin-top: 3px;
+            color: #ffe9a8;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+        nav a:hover {
+            background: white;
+            color: #b90f2f;
+        }
+
+
+        /* HERO */
+
+        .hero {
+            background:
+                linear-gradient(
+                    rgba(255, 232, 182, 0.92),
+                    rgba(255, 248, 237, 0.95)
+                );
+
+            padding: 70px 7%;
+        }
+
+        .hero-inner {
+            max-width: 1200px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            align-items: center;
+            gap: 45px;
+        }
+
+        .hero-text h2 {
+            margin: 0;
+            color: #b90f2f;
+            font-size: 52px;
+            line-height: 1.05;
+        }
+
+        .hero-text h3 {
+            font-size: 28px;
+            margin: 12px 0;
+        }
+
+        .hero-tagline {
+            font-size: 18px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .hero-number {
+            display: inline-block;
+            margin-top: 5px;
+            font-size: 16px;
+            color: #b90f2f;
+            font-weight: bold;
+        }
+
+        .hero-text p {
+            max-width: 560px;
+            color: #555;
+            font-size: 17px;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 430px;
+            object-fit: cover;
+            border-radius: 18px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+        }
+
+        .button {
+            display: inline-block;
+            background: #b90f2f;
+            color: white;
+            padding: 13px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 12px;
+        }
+
+        .button:hover {
+            background: #8e0923;
+        }
+
+
+        /* GENERAL SECTIONS */
+
+        .section {
+            padding: 65px 7%;
+        }
+
+        .section-inner {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .section-title h2 {
+            margin-bottom: 5px;
+            color: #b90f2f;
+            font-size: 34px;
+        }
+
+        .section-title p {
+            color: #666;
+        }
+
+
+        /* WHY MACDKEN */
+
+        .why-grid {
+            display: grid;
+            grid-template-columns:
+                repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .why-box {
+            background: white;
+            border: 1px solid #e3d9ca;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .why-box summary {
+            color: #b90f2f;
+            font-weight: bold;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .why-box p {
+            color: #555;
+        }
+
+
+        /* CATEGORIES */
+
+        .category-grid {
+            display: grid;
+            grid-template-columns:
+                repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .category {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #e3d9ca;
+            box-shadow: 0 7px 18px rgba(0,0,0,0.08);
+        }
+
+        .category > img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .category-content {
+            padding: 20px;
+        }
+
+        .category-content h3 {
+            color: #b90f2f;
+            margin-top: 0;
+            font-size: 25px;
+        }
+
+        .category-content p {
+            color: #555;
+        }
+
+        details {
+            margin-top: 15px;
+        }
+
+        summary {
+            cursor: pointer;
+        }
+
+        .category summary {
+            background: #b90f2f;
+            color: white;
+            padding: 11px 15px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .category summary:hover {
+            background: #8e0923;
+        }
+
+        .food-list {
+            margin-top: 15px;
+        }
+
+        .food-item {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+        }
+
+        .food-item:last-child {
+            border-bottom: none;
+        }
+
+        .food-item h4 {
+            margin: 0;
+            color: #333;
+        }
+
+        .food-item p {
+            font-size: 14px;
+            margin: 5px 0 8px;
+        }
+
+        .food-price {
+            color: #b90f2f;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        .small-button {
+            display: inline-block;
+            background: #b90f2f;
+            color: white;
+            padding: 7px 11px;
+            text-decoration: none;
+            font-size: 12px;
+            border-radius: 3px;
+        }
+
+        .small-button:hover {
+            background: #8e0923;
+        }
+
+
+        /* BEST SELLERS */
+
+        .best-grid {
+            display: grid;
+            grid-template-columns:
+                repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .best-card {
+            background: white;
+            border: 1px solid #e3d9ca;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .best-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .best-content {
+            padding: 20px;
+        }
+
+        .best-content h3 {
+            margin-top: 0;
+            color: #b90f2f;
+        }
+
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #b90f2f;
+        }
+
+
+        /* PROMOS */
+
+        .promo-grid {
+            display: grid;
+            grid-template-columns:
+                repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .promo {
+            background: #fff;
+            border-left: 6px solid #b90f2f;
+            padding: 25px;
+            border-radius: 7px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+        }
+
+        .promo h3 {
+            color: #b90f2f;
+            margin-top: 0;
+        }
+
+
+        /* MENU TABLE */
+
+        .table-wrapper {
+            overflow-x: auto;
+            background: white;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 700px;
+        }
+
+        th {
+            background: #b90f2f;
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+
+        td {
+            padding: 13px 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:nth-child(even) {
+            background: #fff3dc;
+        }
+
+        tr:hover {
+            background: #ffe9bd;
+        }
+
+
+        /* COMBOS */
+
+        .combo-grid {
+            display: grid;
+            grid-template-columns:
+                repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .combo {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid #e3d9ca;
+        }
+
+        .combo h3 {
+            color: #b90f2f;
+        }
+
+        .combo strong {
+            font-size: 20px;
+            color: #b90f2f;
+        }
+
+
+        /* ORDER */
+
+        .order-section {
+            background: #f7e7c4;
+        }
+
+        form {
+            background: white;
+            max-width: 950px;
+            margin: auto;
+            padding: 35px;
+            border-radius: 12px;
+            border: 1px solid #ddd;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+
+        fieldset {
+            border: 1px solid #d7c8b4;
+            margin-bottom: 25px;
+            padding: 22px;
+            border-radius: 7px;
+        }
+
+        legend {
+            color: #b90f2f;
+            font-weight: bold;
+            padding: 0 8px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 14px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 11px;
+            margin-top: 6px;
+            border: 1px solid #bbb;
+            border-radius: 4px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: 2px solid #f5c542;
+            border-color: #b90f2f;
+        }
+
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns:
+                1fr 1fr;
+            gap: 18px;
+        }
+
+        .radio-group,
+        .check-group {
+            margin-top: 10px;
+        }
+
+        .radio-group label,
+        .check-group label {
+            display: inline-block;
+            font-weight: normal;
+            margin-right: 18px;
+        }
+
+        .radio-group input,
+        .check-group input {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        .delivery-note {
+            background: #fff7e6;
+            border-left: 5px solid #f5c542;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .submit-area {
+            text-align: center;
+        }
+
+        .submit-button {
+            background: #b90f2f;
+            color: white;
+            border: none;
+            padding: 15px 35px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .submit-button:hover {
+            background: #8e0923;
+        }
+
+
+        /* CONTACT */
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns:
+                repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .contact-box {
+            background: white;
+            padding: 25px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .contact-box h3 {
+            color: #b90f2f;
+        }
+
+
+        /* FOOTER */
+
+        footer {
+            background: #292929;
+            color: white;
+            padding: 35px 7%;
+        }
+
+        .footer-inner {
+            max-width: 1200px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns:
+                2fr 1fr 1fr;
+
+            gap: 30px;
+        }
+
+        footer h3 {
+            margin-top: 0;
+            color: #f5c542;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .copyright {
+            border-top: 1px solid #555;
+            margin-top: 25px;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 13px;
+            color: #ccc;
+        }
+
+
+        /* RESPONSIVE */
+
+        @media (max-width: 900px) {
+
+            .header-inner {
+                flex-direction: column;
+            }
+
+            .hero-inner {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-text h2 {
+                font-size: 42px;
+            }
+
+            .why-grid,
+            .category-grid,
+            .best-grid,
+            .promo-grid,
+            .combo-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .footer-inner {
+                grid-template-columns: 1fr 1fr;
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            header {
+                padding: 20px;
+            }
+
+            nav {
+                display: block;
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 2px;
+            }
+
+            .hero {
+                padding: 45px 20px;
+            }
+
+            .section {
+                padding: 45px 20px;
+            }
+
+            .hero-text h2 {
+                font-size: 36px;
+            }
+
+            .hero-image img {
+                height: 280px;
+            }
+
+            .why-grid,
+            .category-grid,
+            .best-grid,
+            .promo-grid,
+            .combo-grid,
+            .contact-grid,
+            .footer-inner {
+                grid-template-columns: 1fr;
+            }
+
+            form {
+                padding: 20px;
+            }
+
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header id="home">
+
+    <div class="header-inner">
+
+        <div class="logo-area">
+
+            <h1>MACDKEN</h1>
+
+            <p>
+                GOOD FOOD. GOOD VIBES. GOOD MOOD.
+            </p>
+
+            <div class="tagline-extra">
+                123 — KANIYA-KANIYA NA 'TO.
+            </div>
+
+        </div>
+
+
+        <nav>
+
+            <a href="#home">HOME</a>
+
+            <a href="#menu">MENU</a>
+
+            <a href="#best">BEST SELLERS</a>
+
+            <a href="#promos">PROMOS</a>
+
+            <a href="#order">ORDER NOW</a>
+
+            <a href="#contact">CONTACT</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- HERO -->
+
+<main>
+
+<section class="hero">
+
+    <div class="hero-inner">
+
+        <div class="hero-text">
+
+            <h2>
+                CRAVE IT.<br>
+                ORDER IT.
+            </h2>
+
+            <h3>
+                LOVE EVERY BITE.
+            </h3>
+
+            <div class="hero-tagline">
+                GOOD FOOD. GOOD VIBES. GOOD MOOD.
+            </div>
+
+            <div class="hero-number">
+                123 — KANIYA-KANIYA NA 'TO.
+            </div>
+
+            <p>
+                Welcome to MACDKEN Food House.
+                Pick your favorite meal, choose
+                your extras, and enjoy food made
+                for your cravings.
+            </p>
+
+            <a
+                href="#order"
+                class="button"
+            >
+                ORDER NOW
+            </a>
+
+        </div>
+
+
+        <div class="hero-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=1200&q=85"
+                alt="Fresh cheeseburger"
+            >
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- WHY MACDKEN -->
+
+<section class="section">
+
+    <div class="section-inner">
+
+        <div class="section-title">
+
+            <h2>WHY MACDKEN?</h2>
+
+            <p>
+                Good food, good vibes and a good mood
+                start with the little things.
+            </p>
+
+        </div>
+
+
+        <div class="why-grid">
+
+
+            <details class="why-box">
+
+                <summary>
+                    Fresh
+                </summary>
+
+                <p>
+                    We prepare our meals with care
+                    and quality in mind. Ingredients
+                    are prepared for every order so
+                    customers can enjoy food while
+                    it is fresh and satisfying.
+                </p>
+
+            </details>
+
+
+            <details class="why-box">
+
+                <summary>
+                    Affordable
+                </summary>
+
+                <p>
+                    Different meals, sizes and
+                    combinations give customers
+                    more choices depending on what
+                    they want and what fits their budget.
+                </p>
+
+            </details>
+
+
+            <details class="why-box">
+
+                <summary>
+                    Delicious
+                </summary>
+
+                <p>
+                    From burgers and crispy chicken
+                    to fries, drinks and desserts,
+                    there is something for every
+                    kind of craving.
+                </p>
+
+            </details>
+
+
+            <details class="why-box">
+
+                <summary>
+                    Fast
+                </summary>
+
+                <p>
+                    Our simple ordering layout makes
+                    it easier to choose your food,
+                    provide your details and place
+                    an order.
+                </p>
+
+            </details>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- MENU -->
+
+<section
+    class="section"
+    id="menu"
+>
+
+    <div class="section-inner">
+
+        <div class="section-title">
+
+            <h2>OUR MENU</h2>
+
+            <p>
+                Choose a category and find something
+                that fits your craving.
+            </p>
+
+        </div>
+
+
+        <div class="category-grid">
+
+
+            <!-- BURGERS -->
+
+            <div class="category">
+
+                <img
+                    src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=900&q=85"
+                    alt="Fresh burgers"
+                >
+
+                <div class="category-content">
+
+                    <h3>
+                        Burgers
+                    </h3>
+
+                    <p>
+                        Classic, cheesy and loaded
+                        burger choices.
+                    </p>
+
+
+                    <details>
+
+                        <summary>
+                            EXPLORE BURGERS
+                        </summary>
+
+
+                        <div class="food-list">
+
+
+                            <div class="food-item">
+
+                                <div>
+
+                                    <h4>
+                                        Classic Cheeseburger
+                                    </h4>
+
+                                    <p>
+                                        Beef patty, melted
+                                        cheese, lettuce,
+                                        tomato and house sauce.
+                                    </p>
+
+                                    <a
+                                        href="#order"
+                                        class="small-button"
+                                    >
+                                        CHOOSE THIS
+                                    </a>
+
+                                </div>
+
+                                <span class="food-price">
+                                    ₱119
+                                </span>
+
+                            </div>
+
+
+                            <div class="food-item">
+
+                                <div>
+
+                                    <h4>
+                                        Bacon Cheeseburger
+                                    </h4>
+
+                                    <p>
+                                        Beef patty with
+                                        crispy bacon,
+                                        cheese and sauce.
+                                    </p>
+
+                                    <a
+                                        href="#order"
+                                        class="small-button"
+                                    >
+                                        CHOOSE THIS
+                                    </a>
+
+                                </div>
+
+                                <span class="food-price">
+                                    ₱149
+                                </span>
+
+                            </div>
+
+
+                            <div class="food-item">
+
+                                <div>
+
+                                    <h4>
+                                        Double Cheeseburger
+                                    </h4>
+
+                                    <p>
+                                        Two beef patties
+                                        with double cheese
+                                        and fresh vegetables.
+                                    </p>
+
+                                    <a
+                                        href="#order"
+                                        class="small-button"
+                                    >
+                                        CHOOSE THIS
+                                    </a>
+
+                                </div>
+
+                                <span class="food-price">
+                                    ₱169
+                                </span>
+
+                            </div>
+
+
+                            <div class="food-item">
+
+                                <div>
+
+                                    <h4>
+                                        Mushroom Swiss Burger
+                                    </h4>
+
+                                    <p>
+                                        Beef patty,
+                                        mushrooms, Swiss
+                                        cheese and creamy sauce.
+                                    </p>
+
+                                    <a
+                                        href="#order"
+                                        class="small-button"
+                                    >
+                                        CHOOSE THIS
+                                    </a>
+
+                                </div>
+
+                                <span class="food-price">
+                                    ₱159
+                                </span>
+
+                            </div>
+
+
+                            <div class="food-item">
+
+                                <div>
+
+                                    <h4>
+                                        BBQ Bacon Burger
+                                    </h4>
+
+                                    <p>
+                                        Beef patty, bacon,
+                                        cheese and smoky
+                                        BBQ sauce.
+                                    </p>
+
+                                    <a
+                                        href="#order"
+                                        class="small-button"
+                                    >
+                                        CHOOSE THIS
+                                    </a>
+
+                                </div>
+
+                                <span class="food-price">
+                                    ₱159
+                                </span>
+
+                            </div>
+
+
+                            <div class="food-item">
+
+                                <div>
+
+                                    <h4>
+                                        Crispy Chicken Burger
+                                    </h4>
+
+                                    <p>
+                                        Crispy chicken fillet,
+                                        lettuce and creamy sauce.
+                                    </p>
+
+                                    <a
+                                        href="#order"
+                                        class="small-button"
+                                    >
+                                        CHOOSE THIS
+                                    </a>
+
+                                </div>
+
+                                <span class="food-price">
+                                    ₱139
+                                </span>
+
+                            </div>
+
+
+                        </div>
+
+                    </details>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CHICKEN -->
+
+            <div class="category">
+
+                <img
+                    src="https://images.unsplash.com/photo-1562967916-eb82221dfb92?auto=format&fit=crop&w=900&q=85"
+                    alt="Crispy chicken"
+                >
+
+                <div class="category-content">
+
+                    <h3>
+                        Chicken
+                    </h3>
+
+                    <p>
+                        Crispy and flavorful chicken
+                        meals.
+                    </p>
+
+
+                    <details>
+
+                        <summary>
+                            EXPLORE CHICKEN
+                        </summary>
+
+
+                        <div class="food-list">
+
+
+                            <div class="food-item">
+
+                                <div>
+
+                                    <h4>
+                                        Crispy Chicken
+                                    </h4>
+
+                                    <p>
+                                        Golden fried chicken
+                                        with a crispy outside
+                                        and tender inside.
+                                    </p>
+
+                                    <a
+                                        href="#order"
+                                        class="small-button"
+                                    >
+                                        CHOOSE THIS
+                                    </a>
+
+                                </div>
+
+                                <span class="food-price">
+                                    ₱109
+                                </span>
+
+                            </div>
+
+
+                            <div class="food-item">
+
+                                <div>
+
+                                    <h4>
+                                        Chicken Rice Meal
+                                    </h4>
+
+                                    <p>
+                                        Crispy chicken with
+                                        steamed rice and gravy.
+                                    </p>
+
+                                    <a
+                                        href="#order"
+                                        class="small-button"
+                                    >
+                                        CHOOSE THIS
+                                    </a>
+
+                                </div>
+
+                                <span class="food-price">
+                                    ₱139
+                                </span>
+
+                            </div>
+
+
+                            <div class="food-item">
+
+                                <div>
+
+                                    <h4>
+                                        Chicken Fillet
+                                    </h4>
+
+                                    <p>
+                                        Tender chicken fillet
+                                        with house sauce and rice.
+                                    </p>
+
+                                    <a
+                                        href="#order"
+                                        class="small-button"
+                                    >
+                                        CHOOSE THIS
+                                    </a>
+
+                                </div>
+
+                                <span class="food-price">
+                                    ₱129
+                                </span>
+
+                            </div>
+
+
+                            <div class="food-item">
+
+                                <div>
+
+                                    <h4>
+                                        Spicy Chicken
+                                    </h4>
+
+                                    <p>
+                                        Crispy chicken with
+                                        flavorful spicy seasoning.
+                                    </p>
+
+                                    <a
+                                        href="#order"
+                                        class="small-button"
+                                    >
+                                        CHOOSE THIS
+                                    </a>
+
+                                </div>
+
+                                <span class="food-price">
+                                    ₱119
+                                </span>
+
+                            </div>
+
+
+                        </div>
+
+                    </details>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FRIES -->
+
+            <div class="category">
+
+                <img
+                    src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=900&q=85"
+                    alt="French fries"
+                >
+
+                <div class="category-content">
+
+                    <h3>
+                        Fries & Sides
+                    </h3>
+
+                    <p>
+                        Crispy sides for your meal.
+                    </p>
+
+
+                    <details>
+
+                        <summary>
+                            EXPLORE FRIES
+                        </summary>
+
+
+                        <div class="food-list">
+
+
+                            <div class="food-item">
+
+                                <div>
+
+                                    <h4>
+                                        Regular Fries
+                                    </h4>
+
+                                    <p>
+                                        Classic golden
+                                        french fries.
+                                    </p>
+
+                                    <a
+                                        href="#order"
+                                        class="small-button"
+                                    >
+                                        CHOOSE THIS
+                                    </a>
+
+                                </div>
+
+                                <span class="food-price">
+                                    ₱69
+                                </span>
+
+                            </div>
+
+
+                            <div class="food-item">
+
+                                <div>
+
+                                    <h4>
+                                        Large Fries
+                                    </h4>
+
+                                    <p>
+                                        A larger serving
+                                        for bigger cravings.
+                                    </p>
+
+                                    <a
+                                        href="#order"
+                                        class="small-button"
+                                    >
+                                        CHOOSE THIS
+                                    </a>
+
+                                </div>
+
+                                <span class="food-price">
+                                    ₱89
+                                </span>
+
+                            </div>
+
+
+                            <div class="food-item">
+
+                                <div>
+
+                                    <h4>
+                                        Cheesy Fries
+                                    </h4>
+
+                                    <p>
+                                        Crispy fries with
+                                        creamy cheese sauce.
+                                    </p>
+
+                                    <a
+                                        href="#order"
+                                        class="small-button"
+                                    >
+                                        CHOOSE THIS
+                                    </a>
+
+                                </div>
+
+                                <span class="food-price">
+                                    ₱89
+                                </span>
+
+                            </div>
+
+
+                            <div class="food-item">
+
+                                <div>
+
+                                    <h4>
+                                        Loaded Fries
+                                    </h4>
+
+                                    <p>
+                                        Fries with cheese,
+                                        bacon and special sauce.
+                                    </p>
+
+                                    <a
+                                        href="#order"
+                                        class="small-button"
+                                    >
+                                        CHOOSE THIS
+                                    </a>
+
+                                </div>
+
+                                <span class="food-price">
+                                    ₱119
+                                </span>
+
+                            </div>
+
+
+                        </div>
+
+                    </details>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- DRINKS -->
+
+            <div class="category">
+
+                <img
+                    src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=900&q=85"
+                    alt="Refreshing iced tea"
+                >
+
+                <div class="category-content">
+
+                    <h3>
+                        Drinks
+                    </h3>
+
+                    <p>
+                        Refreshing drinks for your meal.
+                    </p>
+
+
+                    <details>
+
+                        <summary>
+                            EXPLORE DRINKS
+                        </summary>
+
+
+                        <div class="food-list">
+
+
+                            <div class="food-item">
+
+                                <div>
+
+                                    <h4>
+                                        Iced Tea
+                                    </h4>
+
+                                    <p>
+                                        Refreshing house iced tea.
+                                    </p>
+
+                                    <a
+                                        href="#order"
+                                        class="small-button"
+                                    >
+                                        CHOOSE THIS
+                                    </a>
+
+                                </div>
+
+                                <span class="food-price">
+                                    ₱49
+                                </span>
+
+                            </div>
+
+
+                            <div class="food-item">
+
+                                <div>
+
+                                    <h4>
+                                        Lemonade
+                                    </h4>
+
+                                    <p>
+                                        Cool and refreshing
+                                        citrus drink.
+                                    </p>
+
+                                    <a
+                                        href="#order"
+                                        class="small-button"
+                                    >
+                                        CHOOSE THIS
+                                    </a>
+
+                                </div>
+
+                                <span class="food-price">
+                                    ₱59
+                                </span>
+
+                            </div>
+
+
+                            <div class="food-item">
+
+                                <div>
+
+                                    <h4>
+                                        Soft Drink
+                                    </h4>
+
+                                    <p>
+                                        Chilled carbonated beverage.
+                                    </p>
+
+                                    <a
+                                        href="#order"
+                                        class="small-button"
+                                    >
+                                        CHOOSE THIS
+                                    </a>
+
+                                </div>
+
+                                <span class="food-price">
+                                    ₱49
+                                </span>
+
+                            </div>
+
+
+                            <div class="food-item">
+
+                                <div>
+
+                                    <h4>
+                                        Bottled Water
+                                    </h4>
+
+                                    <p>
+                                        Cold bottled water.
+                                    </p>
+
+                                    <a
+                                        href="#order"
+                                        class="small-button"
+                                    >
+                                        CHOOSE THIS
+                                    </a>
+
+                                </div>
+
+                                <span class="food-price">
+                                    ₱35
+                                </span>
+
+                            </div>
+
+
+                        </div>
+
+                    </details>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- COMBOS -->
+
+            <div class="category">
+
+                <img
+                    src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=85"
+                    alt="Burger combo"
+                >
+
+                <div class="category-content">
+
+                    <h3>
+                        Combo Meals
+                    </h3>
+
+                    <p>
+                        Complete meals for individuals
+                        and groups.
+                    </p>
+
+
+                    <details>
+
+                        <summary>
+                            EXPLORE COMBOS
+                        </summary>
+
+
+                        <div class="food-list">
+
+
+                            <div class="food-item">
+
+                                <div>
+
+                                    <h4>
+                                        Student Meal
+                                    </h4>
+
+                                    <p>
+                                        Burger, fries and
+                                        regular drink.
+                                    </p>
+
+                                    <a
+                                        href="#order"
+                                        class="small-button"
+                                    >
+                                        CHOOSE THIS
+                                    </a>
+
+                                </div>
+
+                                <span class="food-price">
+                                    ₱149
+                                </span>
+
+                            </div>
+
+
+                            <div class="food-item">
+
+                                <div>
+
+                                    <h4>
+                                        Barkada Meal
+                                    </h4>
+
+                                    <p>
+                                        Burgers, fries and
+                                        drinks for sharing.
+                                    </p>
+
+                                    <a
+                                        href="#order"
+                                        class="small-button"
+                                    >
+                                        CHOOSE THIS
+                                    </a>
+
+                                </div>
+
+                                <span class="food-price">
+                                    ₱499
+                                </span>
+
+                            </div>
+
+
+                            <div class="food-item">
+
+                                <div>
+
+                                    <h4>
+                                        Family Meal
+                                    </h4>
+
+                                    <p>
+                                        Family-sized combination
+                                        for sharing.
+                                    </p>
+
+                                    <a
+                                        href="#order"
+                                        class="small-button"
+                                    >
+                                        CHOOSE THIS
+                                    </a>
+
+                                </div>
+
+                                <span class="food-price">
+                                    ₱699
+                                </span>
+
+                            </div>
+
+
+                        </div>
+
+                    </details>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- DESSERTS -->
+
+            <div class="category">
+
+                <img
+                    src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85"
+                    alt="Chocolate cake dessert"
+                >
+
+                <div class="category-content">
+
+                    <h3>
+                        Desserts
+                    </h3>
+
+                    <p>
+                        Something sweet to finish
+                        your meal.
+                    </p>
+
+
+                    <details>
+
+                        <summary>
+                            EXPLORE DESSERTS
+                        </summary>
+
+
+                        <div class="food-list">
+
+
+                            <div class="food-item">
+
+                                <div>
+
+                                    <h4>
+                                        Chocolate Sundae
+                                    </h4>
+
+                                    <p>
+                                        Soft serve with
+                                        chocolate topping.
+                                    </p>
+
+                                    <a
+                                        href="#order"
+                                        class="small-button"
+                                    >
+                                        CHOOSE THIS
+                                    </a>
+
+                                </div>
+
+                                <span class="food-price">
+                                    ₱59
+                                </span>
+
+                            </div>
+
+
+                            <div class="food-item">
+
+                                <div>
+
+                                    <h4>
+                                        Strawberry Sundae
+                                    </h4>
+
+                                    <p>
+                                        Soft serve with
+                                        strawberry topping.
+                                    </p>
+
+                                    <a
+                                        href="#order"
+                                        class="small-button"
+                                    >
+                                        CHOOSE THIS
+                                    </a>
+
+                                </div>
+
+                                <span class="food-price">
+                                    ₱59
+                                </span>
+
+                            </div>
+
+
+                            <div class="food-item">
+
+                                <div>
+
+                                    <h4>
+                                        Cookies & Cream
+                                    </h4>
+
+                                    <p>
+                                        Soft serve with
+                                        cookie pieces.
+                                    </p>
+
+                                    <a
+                                        href="#order"
+                                        class="small-button"
+                                    >
+                                        CHOOSE THIS
+                                    </a>
+
+                                </div>
+
+                                <span class="food-price">
+                                    ₱69
+                                </span>
+
+                            </div>
+
+
+                            <div class="food-item">
+
+                                <div>
+
+                                    <h4>
+                                        Chocolate Brownie
+                                    </h4>
+
+                                    <p>
+                                        Soft and rich
+                                        chocolate brownie.
+                                    </p>
+
+                                    <a
+                                        href="#order"
+                                        class="small-button"
+                                    >
+                                        CHOOSE THIS
+                                    </a>
+
+                                </div>
+
+                                <span class="food-price">
+                                    ₱79
+                                </span>
+
+                            </div>
+
+
+                            <div class="food-item">
+
+                                <div>
+
+                                    <h4>
+                                        Caramel Cheesecake
+                                    </h4>
+
+                                    <p>
+                                        Creamy cheesecake
+                                        with caramel topping.
+                                    </p>
+
+                                    <a
+                                        href="#order"
+                                        class="small-button"
+                                    >
+                                        CHOOSE THIS
+                                    </a>
+
+                                </div>
+
+                                <span class="food-price">
+                                    ₱99
+                                </span>
+
+                            </div>
+
+
+                            <div class="food-item">
+
+                                <div>
+
+                                    <h4>
+                                        Apple Pie
+                                    </h4>
+
+                                    <p>
+                                        Warm pastry with
+                                        sweet apple filling.
+                                    </p>
+
+                                    <a
+                                        href="#order"
+                                        class="small-button"
+                                    >
+                                        CHOOSE THIS
+                                    </a>
+
+                                </div>
+
+                                <span class="food-price">
+                                    ₱69
+                                </span>
+
+                            </div>
+
+
+                        </div>
+
+                    </details>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- BEST SELLERS -->
+
+<section
+    class="section"
+    id="best"
+>
+
+    <div class="section-inner">
+
+        <div class="section-title">
+
+            <h2>
+                BEST SELLERS
+            </h2>
+
+            <p>
+                Customer favorites from MACDKEN.
+            </p>
+
+        </div>
+
+
+        <div class="best-grid">
+
+
+            <article class="best-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=85"
+                    alt="MacKen Special Burger"
+                >
+
+                <div class="best-content">
+
+                    <h3>
+                        MacKen Special Burger
+                    </h3>
+
+                    <p>
+                        Beef patty, cheese,
+                        fresh vegetables,
+                        fries and house sauce.
+                    </p>
+
+                    <p class="price">
+                        ₱179
+                    </p>
+
+                    <a
+                        href="#order"
+                        class="small-button"
+                    >
+                        ORDER NOW
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="best-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1562967916-eb82221dfb92?auto=format&fit=crop&w=900&q=85"
+                    alt="Crispy Chicken Meal"
+                >
+
+                <div class="best-content">
+
+                    <h3>
+                        Crispy Chicken Meal
+                    </h3>
+
+                    <p>
+                        Crispy chicken,
+                        rice, gravy and drink.
+                    </p>
+
+                    <p class="price">
+                        ₱139
+                    </p>
+
+                    <a
+                        href="#order"
+                        class="small-button"
+                    >
+                        ORDER NOW
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="best-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=900&q=85"
+                    alt="Loaded Fries"
+                >
+
+                <div class="best-content">
+
+                    <h3>
+                        Loaded Fries
+                    </h3>
+
+                    <p>
+                        Crispy fries topped
+                        with cheese, bacon
+                        and sauce.
+                    </p>
+
+                    <p class="price">
+                        ₱119
+                    </p>
+
+                    <a
+                        href="#order"
+                        class="small-button"
+                    >
+                        ORDER NOW
+                    </a>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- PROMOS -->
+
+<section
+    class="section"
+    id="promos"
+>
+
+    <div class="section-inner">
+
+        <div class="section-title">
+
+            <h2>
+                PROMOS
+            </h2>
+
+            <p>
+                More food, more choices.
+            </p>
+
+        </div>
+
+
+        <div class="promo-grid">
+
+
+            <div class="promo">
+
+                <h3>
+                    Student Meal
+                </h3>
+
+                <p>
+                    Burger, fries and drink
+                    for an easy meal.
+                </p>
+
+                <strong>
+                    ₱149
+                </strong>
+
+                <br>
+
+                <a
+                    href="#order"
+                    class="small-button"
+                >
+                    ORDER NOW
+                </a>
+
+            </div>
+
+
+            <div class="promo">
+
+                <h3>
+                    Barkada Meal
+                </h3>
+
+                <p>
+                    A sharing meal for
+                    friends and groups.
+                </p>
+
+                <strong>
+                    ₱499
+                </strong>
+
+                <br>
+
+                <a
+                    href="#order"
+                    class="small-button"
+                >
+                    ORDER NOW
+                </a>
+
+            </div>
+
+
+            <div class="promo">
+
+                <h3>
+                    Family Meal
+                </h3>
+
+                <p>
+                    A larger meal combination
+                    for family gatherings.
+                </p>
+
+                <strong>
+                    ₱699
+                </strong>
+
+                <br>
+
+                <a
+                    href="#order"
+                    class="small-button"
+                >
+                    ORDER NOW
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- MENU TABLE -->
+
+<section class="section">
+
+    <div class="section-inner">
+
+        <div class="section-title">
+
+            <h2>
+                MENU
+            </h2>
+
+            <p>
+                Selected MACDKEN food and prices.
+            </p>
+
+        </div>
+
+
+        <div class="table-wrapper">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Item
+                        </th>
+
+                        <th>
+                            Category
+                        </th>
+
+                        <th>
+                            Description
+                        </th>
+
+                        <th>
+                            Price
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+                        <td>Classic Cheeseburger</td>
+                        <td>Burger</td>
+                        <td>Beef patty with cheese and vegetables</td>
+                        <td>₱119</td>
+                    </tr>
+
+                    <tr>
+                        <td>Bacon Cheeseburger</td>
+                        <td>Burger</td>
+                        <td>Burger with bacon, cheese and sauce</td>
+                        <td>₱149</td>
+                    </tr>
+
+                    <tr>
+                        <td>Double Cheeseburger</td>
+                        <td>Burger</td>
+                        <td>Two beef patties with double cheese</td>
+                        <td>₱169</td>
+                    </tr>
+
+                    <tr>
+                        <td>Crispy Chicken</td>
+                        <td>Chicken</td>
+                        <td>Crispy fried chicken</td>
+                        <td>₱109</td>
+                    </tr>
+
+                    <tr>
+                        <td>Chicken Rice Meal</td>
+                        <td>Chicken</td>
+                        <td>Chicken with rice and gravy</td>
+                        <td>₱139</td>
+                    </tr>
+
+                    <tr>
+                        <td>Regular Fries</td>
+                        <td>Fries</td>
+                        <td>Golden crispy fries</td>
+                        <td>₱69</td>
+                    </tr>
+
+                    <tr>
+                        <td>Cheesy Fries</td>
+                        <td>Fries</td>
+                        <td>Fries with cheese sauce</td>
+                        <td>₱89</td>
+                    </tr>
+
+                    <tr>
+                        <td>Iced Tea</td>
+                        <td>Drink</td>
+                        <td>Refreshing house iced tea</td>
+                        <td>₱49</td>
+                    </tr>
+
+                    <tr>
+                        <td>Lemonade</td>
+                        <td>Drink</td>
+                        <td>Refreshing citrus drink</td>
+                        <td>₱59</td>
+                    </tr>
+
+                    <tr>
+                        <td>Chocolate Sundae</td>
+                        <td>Dessert</td>
+                        <td>Soft serve with chocolate topping</td>
+                        <td>₱59</td>
+                    </tr>
+
+                    <tr>
+                        <td>Cookies & Cream</td>
+                        <td>Dessert</td>
+                        <td>Soft serve with cookie pieces</td>
+                        <td>₱69</td>
+                    </tr>
+
+                    <tr>
+                        <td>Apple Pie</td>
+                        <td>Dessert</td>
+                        <td>Warm pastry with apple filling</td>
+                        <td>₱69</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ORDER -->
+
+<section
+    class="section order-section"
+    id="order"
+>
+
+    <div class="section-inner">
+
+        <div class="section-title">
+
+            <h2>
+                ORDER NOW
+            </h2>
+
+            <p>
+                Choose your food and enter your details.
+            </p>
+
+        </div>
+
+
+        <form
+            action="#"
+            method="post"
+        >
+
+
+            <fieldset>
+
+                <legend>
+                    Customer Information
+                </legend>
+
+
+                <div class="form-grid">
+
+                    <div>
+
+                        <label for="fullname">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="fullname"
+                            name="fullname"
+                            placeholder="Enter your complete name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div>
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="example@email.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div>
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="09XXXXXXXXX"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div>
+
+                        <label for="order-date">
+                            Preferred Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="order-date"
+                            name="order-date"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div>
+
+                        <label for="order-time">
+                            Preferred Time
+                        </label>
+
+                        <input
+                            type="time"
+                            id="order-time"
+                            name="order-time"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+            </fieldset>
+
+
+
+            <fieldset>
+
+                <legend>
+                    Food Selection
+                </legend>
+
+
+                <label for="food">
+                    Choose Food
+                </label>
+
+                <select
+                    id="food"
+                    name="food"
+                    required
+                >
+
+                    <option value="">
+                        Select your food
+                    </option>
+
+
+                    <optgroup label="Burgers">
+
+                        <option>
+                            Classic Cheeseburger - ₱119
+                        </option>
+
+                        <option>
+                            Bacon Cheeseburger - ₱149
+                        </option>
+
+                        <option>
+                            Double Cheeseburger - ₱169
+                        </option>
+
+                        <option>
+                            Mushroom Swiss Burger - ₱159
+                        </option>
+
+                        <option>
+                            BBQ Bacon Burger - ₱159
+                        </option>
+
+                        <option>
+                            Crispy Chicken Burger - ₱139
+                        </option>
+
+                    </optgroup>
+
+
+                    <optgroup label="Chicken">
+
+                        <option>
+                            Crispy Chicken - ₱109
+                        </option>
+
+                        <option>
+                            Chicken Rice Meal - ₱139
+                        </option>
+
+                        <option>
+                            Chicken Fillet - ₱129
+                        </option>
+
+                        <option>
+                            Spicy Chicken - ₱119
+                        </option>
+
+                    </optgroup>
+
+
+                    <optgroup label="Fries">
+
+                        <option>
+                            Regular Fries - ₱69
+                        </option>
+
+                        <option>
+                            Large Fries - ₱89
+                        </option>
+
+                        <option>
+                            Cheesy Fries - ₱89
+                        </option>
+
+                        <option>
+                            Loaded Fries - ₱119
+                        </option>
+
+                    </optgroup>
+
+
+                    <optgroup label="Drinks">
+
+                        <option>
+                            Iced Tea - ₱49
+                        </option>
+
+                        <option>
+                            Lemonade - ₱59
+                        </option>
+
+                        <option>
+                            Soft Drink - ₱49
+                        </option>
+
+                        <option>
+                            Bottled Water - ₱35
+                        </option>
+
+                    </optgroup>
+
+
+                    <optgroup label="Desserts">
+
+                        <option>
+                            Chocolate Sundae - ₱59
+                        </option>
+
+                        <option>
+                            Strawberry Sundae - ₱59
+                        </option>
+
+                        <option>
+                            Cookies & Cream - ₱69
+                        </option>
+
+                        <option>
+                            Chocolate Brownie - ₱79
+                        </option>
+
+                        <option>
+                            Caramel Cheesecake - ₱99
+                        </option>
+
+                        <option>
+                            Apple Pie - ₱69
+                        </option>
+
+                    </optgroup>
+
+                </select>
+
+
+                <div class="form-grid">
+
+                    <div>
+
+                        <label for="quantity">
+                            Quantity
+                        </label>
+
+                        <input
+                            type="number"
+                            id="quantity"
+                            name="quantity"
+                            min="1"
+                            max="20"
+                            value="1"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div>
+
+                        <label for="size">
+                            Size
+                        </label>
+
+                        <select
+                            id="size"
+                            name="size"
+                        >
+
+                            <option>
+                                Regular
+                            </option>
+
+                            <option>
+                                Large
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <label>
+                    Add-ons
+                </label>
+
+
+                <div class="check-group">
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="addons"
+                            value="cheese"
+                        >
+                        Extra Cheese
+                    </label>
+
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="addons"
+                            value="fries"
+                        >
+                        Extra Fries
+                    </label>
+
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="addons"
+                            value="sauce"
+                        >
+                        Extra Sauce
+                    </label>
+
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="addons"
+                            value="bacon"
+                        >
+                        Extra Bacon
+                    </label>
+
+                </div>
+
+            </fieldset>
+
+
+
+            <fieldset>
+
+                <legend>
+                    Order Type
+                </legend>
+
+
+                <div class="radio-group">
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="order-type"
+                            value="dine-in"
+                            required
+                        >
+
+                        Dine-in
+
+                    </label>
+
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="order-type"
+                            value="take-out"
+                        >
+
+                        Take-out
+
+                    </label>
+
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="order-type"
+                            value="delivery"
+                        >
+
+                        Delivery
+
+                    </label>
+
+                </div>
+
+            </fieldset>
+
+
+
+            <fieldset>
+
+                <legend>
+                    Delivery Address
+                </legend>
+
+
+                <div class="delivery-note">
+
+                    <strong>
+                        Complete Address
+                    </strong>
+
+                    <p>
+                        For delivery orders, please
+                        provide your complete address.
+                    </p>
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div>
+
+                        <label for="house">
+                            House / Unit Number
+                        </label>
+
+                        <input
+                            type="text"
+                            id="house"
+                            name="house"
+                            placeholder="House or unit number"
+                        >
+
+                    </div>
+
+
+                    <div>
+
+                        <label for="street">
+                            Street
+                        </label>
+
+                        <input
+                            type="text"
+                            id="street"
+                            name="street"
+                            placeholder="Street name"
+                        >
+
+                    </div>
+
+
+                    <div>
+
+                        <label for="barangay">
+                            Barangay
+                        </label>
+
+                        <input
+                            type="text"
+                            id="barangay"
+                            name="barangay"
+                            placeholder="Barangay"
+                        >
+
+                    </div>
+
+
+                    <div>
+
+                        <label for="city">
+                            Municipality / City
+                        </label>
+
+                        <input
+                            type="text"
+                            id="city"
+                            name="city"
+                            placeholder="Municipality or City"
+                        >
+
+                    </div>
+
+
+                    <div>
+
+                        <label for="province">
+                            Province
+                        </label>
+
+                        <input
+                            type="text"
+                            id="province"
+                            name="province"
+                            placeholder="Province"
+                        >
+
+                    </div>
+
+
+                    <div>
+
+                        <label for="postal">
+                            Postal Code
+                        </label>
+
+                        <input
+                            type="text"
+                            id="postal"
+                            name="postal"
+                            placeholder="Postal code"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <label for="landmark">
+                    Landmark / Delivery Instructions
+                </label>
+
+                <textarea
+                    id="landmark"
+                    name="landmark"
+                    placeholder="Example: Near the school gate..."
+                ></textarea>
+
+            </fieldset>
+
+
+
+            <fieldset>
+
+                <legend>
+                    Payment Method
+                </legend>
+
+
+                <div class="radio-group">
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="payment"
+                            value="cash"
+                            required
+                        >
+
+                        Cash
+
+                    </label>
+
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="payment"
+                            value="gcash"
+                        >
+
+                        GCash
+
+                    </label>
+
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="payment"
+                            value="card"
+                        >
+
+                        Card
+
+                    </label>
+
+                </div>
+
+            </fieldset>
+
+
+
+            <fieldset>
+
+                <legend>
+                    Special Instructions
+                </legend>
+
+
+                <label for="instructions">
+                    Notes for Your Order
+                </label>
+
+                <textarea
+                    id="instructions"
+                    name="instructions"
+                    placeholder="Any special requests for your order?"
+                ></textarea>
+
+            </fieldset>
+
+
+
+            <div class="submit-area">
+
+                <button
+                    type="submit"
+                    class="submit-button"
+                >
+                    PLACE ORDER
+                </button>
+
+                <p>
+                    Please review your information
+                    before submitting.
+                </p>
+
+            </div>
+
+
+        </form>
+
+    </div>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section
+    class="section"
+    id="contact"
+>
+
+    <div class="section-inner">
+
+        <div class="section-title">
+
+            <h2>
+                CONTACT MACDKEN
+            </h2>
+
+            <p>
+                Questions about your order?
+                Get in touch with us.
+            </p>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+
+            <div class="contact-box">
+
+                <h3>
+                    Email
+                </h3>
+
+                <p>
+                    macdken@example.com
+                </p>
+
+            </div>
+
+
+            <div class="contact-box">
+
+                <h3>
+                    Phone
+                </h3>
+
+                <p>
+                    09XX-XXX-XXXX
+                </p>
+
+            </div>
+
+
+            <div class="contact-box">
+
+                <h3>
+                    Location
+                </h3>
+
+                <p>
+                    Philippines
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-inner">
+
+
+        <div>
+
+            <h3>
+                MACDKEN
+            </h3>
+
+            <p>
+                GOOD FOOD. GOOD VIBES. GOOD MOOD.
+            </p>
+
+            <p>
+                123 — KANIYA-KANIYA NA 'TO.
+            </p>
+
+            <p>
+                Food made for your cravings.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <p>
+                <a href="#home">
+                    Home
+                </a>
+            </p>
+
+            <p>
+                <a href="#menu">
+                    Menu
+                </a>
+            </p>
+
+            <p>
+                <a href="#best">
+                    Best Sellers
+                </a>
+            </p>
+
+            <p>
+                <a href="#order">
+                    Order
+                </a>
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Customer Service
+            </h3>
+
+            <p>
+                <a href="#contact">
+                    Contact
+                </a>
+            </p>
+
+            <p>
+                Order Assistance
+            </p>
+
+            <p>
+                Delivery Information
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="copyright">
+
+        <p>
+            MACDKEN
+        </p>
+
+        <p>
+            GOOD FOOD. GOOD VIBES. GOOD MOOD.
+        </p>
+
+        <p>
+            123 — KANIYA-KANIYA NA 'TO.
+        </p>
+
+        <p>
+            © 2026 MACDKEN Food House.
+            All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>
